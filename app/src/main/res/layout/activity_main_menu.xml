@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <!-- Main Menu Title -->
+    <TextView
+        android:id="@+id/main_menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Button to Check Items -->
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        app:layout_constraintTop_toBottomOf="@+id/main_menu_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Button to Register Item -->
+    <Button
+        android:id="@+id/buttonViewTasks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View Tasks"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddTask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/textViewQuote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewTasks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="Loading inspirational quote..."
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:padding="16dp" />
+    <!-- Logout Button (Bottom of the screen) -->
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

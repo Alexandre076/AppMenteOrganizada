@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Title"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTaskDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTaskTitle"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/buttonDeleteTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTaskDescription"
+        android:text="Delete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

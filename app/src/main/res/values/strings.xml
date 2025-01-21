@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_login_activity.kt">LoginActivity.kt</string>
+    <string name="title_activity_login">Login</string>
+    <string name="default_web_client_id">1080511366411-8dtvjkoush9g75rfih0ph4vtfvveraq5.apps.googleusercontent.com</string>
+
+</resources>
